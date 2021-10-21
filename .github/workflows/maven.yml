@@ -27,8 +27,8 @@ jobs:
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
-          registry_url: 'docker.io'
-          repository_name: 'mfmontesano/devops_products'
+          image: 'mfmontesano/devops_products'
+          registry: 'docker.io'
           user_name: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
