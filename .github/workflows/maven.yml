@@ -29,7 +29,7 @@ jobs:
       with:
           image: 'mfmontesano/devops_products'
           registry: 'docker.io'
-          user_name: ${{ secrets.DOCKERHUB_USERNAME }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
      
